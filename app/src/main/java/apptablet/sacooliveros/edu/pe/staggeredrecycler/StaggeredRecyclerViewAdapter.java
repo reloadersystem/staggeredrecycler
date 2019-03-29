@@ -52,7 +52,7 @@ public class StaggeredRecyclerViewAdapter extends RecyclerView.Adapter<Staggered
                 .apply(requestOptions)
                 .into(holder.image);
 
-        holder.name.setText(mNames.get(position));
+        //holder.name.setText(mNames.get(position));
 
         holder.image.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,12 +75,12 @@ public class StaggeredRecyclerViewAdapter extends RecyclerView.Adapter<Staggered
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         ImageView image;
-        TextView name;
+
 
         public ViewHolder(View itemView) {
             super(itemView);
             this.image = itemView.findViewById(R.id.imageview_widget);
-            this.name = itemView.findViewById(R.id.name_widget);
+           // this.name = itemView.findViewById(R.id.name_widget);
         }
     }
 }

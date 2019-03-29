@@ -18,6 +18,9 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<String> mNames = new ArrayList<>();
 
 
+    // ArrayList personImages = new ArrayList<>(Arrays.asList(R.drawable.geometria1, R.drawable.geometria2, R.drawable.geometria3, R.drawable.geometria4, R.drawable.geometria5, R.drawable.geometria6, R.drawable.geometria7));
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,8 +58,6 @@ public class MainActivity extends AppCompatActivity {
         mImagenUrls.add("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSncXY86SM05t1iPFsifrVF-S5ttpy3UEt2HlPqZQ2Gwh5I8EE2");
         mNames.add("Solucionario UNI 7");
 
-        mImagenUrls.add("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWQ25sj4yJLqngvFg_r2u-hhtVQ8jbFAg_R39SDN63Iq_IfcYK");
-        mNames.add("Solucionario SM 8");
 
         initRecyclerView();
     }
